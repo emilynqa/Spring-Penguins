@@ -19,7 +19,7 @@ pipeline {
     }
         stage('Deploy') {
             steps {
-                java 'target/spring-penguins-0.0.1-SNAPSHOT.jar'
+                run 'target/spring-penguins-0.0.1-SNAPSHOT.jar'
             }
         }
     }
