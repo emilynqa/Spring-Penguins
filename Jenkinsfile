@@ -22,6 +22,7 @@ pipeline {
                 java -jar 'target/spring-penguins-0.0.1-SNAPSHOT.jar'
             }
         }
+    }
 
             
 }
