@@ -1,17 +1,15 @@
 pipeline {
     agent any
+
+    tools {
+        maven 'M3'
+    }
+
     stages {
         stage('Build') {
             steps {
-                sh './gradlew build'
+                sh 'mvn -B package'
             }
         }
-        stage('Test') {
-            steps {
-                sh './gradlew test'
-            }
-        }
-        
-        
     }
 }
